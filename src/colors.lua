@@ -1,14 +1,16 @@
-local colors = {};
+--[[
+    Author: TheMakarik
+    Under MIT
+]]
 
-colors.reset = "\27[0m"
-colors.black = "\27[30m"
-colors.red = "\27[31m"
-colors.green = "\27[32m"
-colors.yellow = "\27[33m"
-colors.blue = "\27[34m"
-colors.magenta = "\27[35m"
-colors.cyan = "\27[36m"
-colors.white = "\27[37m"
+Colors = {};
 
-
-return colors;
+Colors.reset = "\27[0m";
+Colors.black = "\27[30m";
+Colors.red = "\27[31m";
+Colors.green = "\27[32m";
+Colors.yellow = "\27[33m";
+Colors.blue = "\27[34m";
+Colors.magenta = "\27[35m";
+Colors.cyan = "\27[36m";
+Colors.white = "\27[37m";

@@ -1,12 +1,19 @@
-local conf = {};
+--[[
+    Author: TheMakarik
+    Under MIT
+]]
 
-conf.snake_char = "%";
-conf.wall_char = "#";
-conf.space_char = "*";
+Conf = {};
 
-conf.height = 50;
-conf.width = 50;
+Conf.width = 70;
+Conf.height= 30;
 
-conf.log_path = "";
+Conf.space = "@";
+Conf.space_color = Colors.white;
 
-return conf;
+Conf.snake_head = "*";
+Conf.snake_body = "%";
+Conf.snake_color = Colors.green;
+
+Conf.apple = "^";
+Conf.apple_color = Colors.red;

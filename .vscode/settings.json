@@ -1,0 +1,9 @@
+{
+    "Lua.diagnostics.globals": [
+        "x",
+        "colors"
+    ],
+    "Lua.diagnostics.disable": [
+        "missing-return"
+    ]
+}

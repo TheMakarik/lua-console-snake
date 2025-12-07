@@ -1,8 +1,14 @@
-_G.conf = require "conf";
-_G.colors = require "colors"
-_G.map = require "objects.map";
-_G.area_painter = require "utils.area_painter";
-_G.cord = require "entites/cord";
+--[[
+    Author: TheMakarik
+    Under MIT
+]]
 
-map.load();
-area_painter.paint();
+package.path = package.path .. ";map/?.lua;" .. "map/init.lua";
+
+require "colors";
+require "conf";
+require "cords";
+require "map";
+
+Map.load();
+Map.draw();
