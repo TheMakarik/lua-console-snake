@@ -7,34 +7,37 @@
 Conf = {};
 
 --Snake game's area width
-Conf.width = 64;
+Conf.GAME_WIDTH = 64;
 
 --Snake game's area height
-Conf.height= 32;
+Conf.GAME_HEIGHT= 32;
 
 ---Snake game's space char
-Conf.space = "@";
+Conf.SPACE_CHAR = "@";
 
 ---Snake game's space color
-Conf.space_color = Colors.white;
+Conf.SPACE_COLOR = Colors.white;
 
 ---Snake game's snake's head char
-Conf.snake_head = "*";
+Conf.SNAKE_HEAD_CHAR = "*";
 
 ---Snake game's snake's body
-Conf.snake_body = "0";
+Conf.SNAKE_BODY_CHAR = "0";
 
 ---Snake game's snake's color
-Conf.snake_color = Colors.green;
+Conf.SNAKE_COLOR = Colors.green;
 
 ---Snake game's apple char
-Conf.apple = "^";
+Conf.APPLE_CHAR = "^";
 
 ---Snake game's apple's color
-Conf.apple_color = Colors.red;
+Conf.APPLE_COLOR = Colors.red;
 
 ---Snake game's snake start length
-Conf.snake_length = 3;
+Conf.SNAKE_LENGTH = 3;
 
 ---Seconds to wait for updating snake output
-Conf.seconds_to_update = 0.3;
+Conf.SECONDS_TO_UPDATE = 0.3;
+
+---Key that users need to click to exit the game
+Conf.EXIT_KEY = "q";

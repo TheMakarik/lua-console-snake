@@ -14,6 +14,6 @@ require "elements.snake";
 require "elements.apple";
 require "game";
 
-
+math.randomseed(os.time() * 1000 + math.floor(os.clock() * 1000))
 
 Game.start();

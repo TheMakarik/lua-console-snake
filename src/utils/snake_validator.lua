@@ -11,5 +11,5 @@ function SnakeValidator.is_snake(x, y)
     if cord == nil then
         return false;
     end
-    return cord.title ~= Conf.snake_body or cord.title ~= Conf.snake_head;
+    return cord.title ~= Conf.SNAKE_BODY_CHAR or cord.title ~= Conf.SNAKE_HEAD_CHAR;
 end

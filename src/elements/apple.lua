@@ -29,13 +29,13 @@ function Apple.generate(max_attempts)
     max_attempts = max_attempts or 100;
     
     for attempt = 1, max_attempts do
-        local x_pos = math.random(1, Conf.width);
-        local y_pos = math.random(1, Conf.height);
+        local x_pos = math.random(1, Conf.GAME_WIDTH);
+        local y_pos = math.random(1, Conf.GAME_HEIGHT);
         
         if snake_is_close(x_pos, y_pos) then
             local cord = Map.get(x_pos, y_pos);
-            cord.title = Conf.apple;
-            cord.color = Conf.apple_color;
+            cord.title = Conf.APPLE_CHAR;
+            cord.color = Conf.APPLE_COLOR;
             break;
         end;
     end;

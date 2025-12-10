@@ -14,13 +14,13 @@ function Map.load(rec_y)
     
     local y = rec_y or 1;
     
-    if y > Conf.height then
+    if y > Conf.GAME_HEIGHT then
         return;
     end;
     
     local x = 1;
-    while x <= Conf.width do
-        local cord = Cords.ctor(x, y, Conf.space);
+    while x <= Conf.GAME_WIDTH do
+        local cord = Cords.ctor(x, y, Conf.SPACE_CHAR);
         cord.color = Colors.white;
         table.insert(Map.area, cord);
         x = x + 1;
@@ -34,11 +34,11 @@ function Map.get(x, y)
     assert(type(x) == "number");
     assert(type(y) == "number");
     
-    if x < 1 or x > Conf.width or y < 1 or y > Conf.height then
+    if x < 1 or x > Conf.GAME_WIDTH or y < 1 or y > Conf.GAME_HEIGHT then
         return nil;
     end;
     
-    local index = (y - 1) * Conf.width + x;
+    local index = (y - 1) * Conf.GAME_WIDTH + x;
     return Map.area[index];
 end;
 
@@ -47,14 +47,10 @@ function Map.draw()
     os.execute("clear");
     local output = "";
     
-    for y = 1, Conf.height do
-        for x = 1, Conf.width do
+    for y = 1, Conf.GAME_HEIGHT do
+        for x = 1, Conf.GAME_WIDTH do
             local cord = Map.get(x, y);
-            if cord then
                 output = output .. cord.color .. cord.title .. Colors.reset;
-            else
-                output = output .. " ";
-            end;
         end;
         output = output .. "\\n";
     end;
