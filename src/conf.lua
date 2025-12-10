@@ -3,6 +3,7 @@
     Under MIT
 ]]
 
+---Game configuration
 Conf = {};
 
 --Snake game's area width
@@ -34,3 +35,6 @@ Conf.apple_color = Colors.red;
 
 ---Snake game's snake start length
 Conf.snake_length = 3;
+
+---Seconds to wait for updating snake output
+Conf.seconds_to_update = 0.3;

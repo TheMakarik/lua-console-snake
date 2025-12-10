@@ -3,6 +3,7 @@
     Under MIT
 ]]
 
+---Supported game colors
 Colors = {};
 
 Colors.reset = "\27[0m";
